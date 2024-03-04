@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <PackageId>Growthbook.FeatureManagement</PackageId>
+    <Version>1.0</Version>
+    <Authors>Adam Fisher</Authors>
+    <Description>Integrate Growthbook with Microsoft.FeatureManagement.</Description>
+    <PackageProjectUrl>https://github.com/adamfisher/FeatureFlagProviders.FeatureManagement</PackageProjectUrl>
+    <PackageIcon>growthbook-icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>Feature Flag;Feature Flags;FeatureManagement;FeatureFlag;Growthbook;Flag</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="growthbook-c-sharp" Version="1.0.2" />
+    <PackageReference Include="Microsoft.FeatureManagement" Version="3.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="growthbook-icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
